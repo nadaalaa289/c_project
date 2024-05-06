@@ -1,7 +1,5 @@
 
-#include "student_database.h"
-#include "student.h"
-#include"edit.h"
+
 #include"admin.h"
 #include <stdio.h>
 #include <stdlib.h>
