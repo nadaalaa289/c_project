@@ -26,7 +26,7 @@ void edit_student_data(int id, const char *name, int age, const char *gender, co
                   edit.pass, &edit.grade) != EOF) {
         if (id == edit.id) {
             if (name == NULL && age == -1 && gender == NULL && pass == NULL && grade == -1) {
-                // Mark record for deletion
+                
                 delete_record = 1;
             } else {
                 if (name != NULL) strcpy(edit.name, name);
@@ -74,7 +74,7 @@ void edit_student_data(int id, const char *name, int age, const char *gender, co
         fclose(file);
         fclose(temp_file);
 
-        // Remove the original file and rename the temporary file
+        
         remove("student.csv");
         rename("temp_student.csv", "student.csv");
         printf("Student record with ID %d deleted successfully.\n", id);
