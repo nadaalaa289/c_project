@@ -1,9 +1,4 @@
-//
-// Created by HP on 5/5/2024.
-//
-#include "student_database.h"
 #include "student.h"
-#include"edit.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
